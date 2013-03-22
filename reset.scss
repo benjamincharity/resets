@@ -41,7 +41,9 @@ q {
 }
 
 a {
+  display: block;
   text-decoration: none;
+
   &:focus,
   &:hover,
   &:active {
