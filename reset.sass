@@ -1,27 +1,25 @@
+///////////////////////////////////////
 //
-// 1. Turn off background repeating for all elements
-// 2. Apply a natural box layout model to all elements
+// HTML5 display definitions
 //
-*
-  // 1
-  background-repeat  : none
-  // 2
-  -webkit-box-sizing : border-box
-  -moz-box-sizing    : border-box
-  -ms-box-sizing     : border-box
-  -o-box-sizing      : border-box
-  box-sizing         : border-box
+///////////////////////////////////////
+
 
 //
-// 1. Apply a natural box layout model to all pseudo elements
+// 1. Apply a natural box layout model to all elements
+// 2. Apply a natural box layout model to all pseudo elements
 //
+
+// 1
+*,
+// 2
 *:after,
 *:before
-  -webkit-box-sizing : border-box
-  -moz-box-sizing    : border-box
-  -ms-box-sizing     : border-box
-  -o-box-sizing      : border-box
-  box-sizing         : border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing:    border-box
+  -ms-box-sizing:     border-box
+  -o-box-sizing:      border-box
+  box-sizing:         border-box
 
 //
 // Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
@@ -148,11 +146,13 @@ pre
   white-space: pre-wrap
 
 //
-// With the increased use of custom font faces I rarely need the font
+// 1. With the increased use of custom font faces I rarely need the font
 // weight set to bold.
+// 2. Default browser margins are way too large. Quit trying to do my job for me.
 //
 h1, h2, h3, h4, h5, h6
   font-weight: normal
+  margin: 0
 
 //
 // Address inconsistent and variable font size in all browsers.
@@ -318,3 +318,11 @@ textarea:invalid
   -ms-box-shadow     : 0 0 5px red
   -o-box-shadow      : 0 0 5px red
   box-shadow         : 0 0 5px red
+
+//
+// Remove default padding and margin from list elements and menus
+//
+ul,
+menu
+  margin: 0
+  padding: 0
