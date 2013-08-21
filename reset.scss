@@ -354,3 +354,10 @@ menu {
   margin: 0;
   padding: 0;
 }
+
+//
+// Remove default list styles
+//
+li {
+  list-style-type: none;
+}
